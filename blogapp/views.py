@@ -9,4 +9,4 @@ def eachpost(request):
     return request(request, 'eachpost')
 
 def allpost(request):
-    return request(request, 'allpost')
+    return request(request, 'allposts')
