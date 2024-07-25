@@ -8,5 +8,5 @@ def home(request):
 def eachpost(request):
     return request(request, 'eachpost')
 
-def allpost(request):
+def allposts(request):
     return request(request, 'allposts')
