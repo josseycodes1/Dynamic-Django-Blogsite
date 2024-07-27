@@ -3,10 +3,10 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-    return request(request, 'index.html')
+    return render(request, 'index.html')
 
 def eachpost(request):
-    return request(request, 'eachpost')
+    return render(request, 'eachpost.html')
 
 def allposts(request):
-    return request(request, 'allposts')
+    return render(request, 'allposts.html')

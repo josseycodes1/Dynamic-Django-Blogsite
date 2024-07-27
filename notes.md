@@ -145,7 +145,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 ```
--> Place the css files in static/css, images in static/images and the html in blog/templates
+-> Place the css files in static/css, images in static/images and the html in app.file/templates
 
 
 -> Load the static files in the html files
@@ -154,7 +154,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 {% load static %}
 
 <!-- example -->
-<link rel="stylesheet" href="{% static 'css/style.css' %}"">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 ```
 
 -> Create Models and register to admin interface
