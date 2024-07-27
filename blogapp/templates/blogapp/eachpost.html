@@ -1,3 +1,4 @@
+{% extends "blogapp/index.html" %}
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -46,28 +47,20 @@
 
     <!-- header -->
     
-    <nav class = "navbar">
-      <div class = "container">
-        <a href = "index.html" class = "navbar-brand">ADEWUMI DOYIN JOSEPHINE</a>
-        <div class = "navbar-nav">
-          <a href = "index.html">HOME</a>
-          <a href = "articles.html">POSTS</a>
-          <a href = "">ABOUT</a>
-          <a href = "">CONTACT ME</a>
-        </div>
-      </div>
-    </nav>
+    {% block header %}
+      
+      {% endblock header%}
     
     <!-- end of header -->
 
     <!-- start of post -->
     <div class="post-container">
-        <img class="featured_img" src="images/sample.jpg">
+        <img class="featured_img" src="{% static 'images/sample.jpg' %}">
         <!-- start article details -->
         <div class="article-info">
           <div class="article-info-content display-center">
             <div class="display-center">
-              <img class="author-pic" src="images/sample.jpg" alt="">
+              <img class="author-pic" src="{% static 'images/sample.jpg' %}" alt="">
               <h6>Josephine on 02-May-2024</h6>
             </div>
             
@@ -96,7 +89,7 @@
         <a href = "#"><i class='bx bxl-instagram'></i></a>
         <a href = "#"><i class='bx bxl-github'></i></a>
       </div>
-      <span>Adewumi Dozin Josephine 2024</span>
+      <span>Adewumi Doyin Josephine 2024</span>
     </footer>
     <!-- end of footer -->
     
