@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crownex Blog Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boxicon awesome icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "index.html" class = "navbar-brand">ADEWUMI DOYIN JOSEPHINE</a>
+          <div class = "navbar-nav">
+            <a href = "index.html">HOME</a>
+            <a href = "articles.html">POSTS</a>
+            <a href = "">ABOUT</a>
+            <a href = "">CONTACT ME</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    
+    {% block content %}
+    {% endblock  %}
+
+    <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "#"><i class='bx bxl-facebook'></i></a>
+        <a href = "#"><i class='bx bxl-twitter'></i></a>
+        <a href = "#"><i class='bx bxl-instagram'></i></a>
+        <a href = "#"><i class='bx bxl-github'></i></a>
+      </div>
+      <span>Adewumi Doyin Josephine 2024</span>
+    </footer>
+    <!-- end of footer -->
+    
+    
+  </body>
+</html>
