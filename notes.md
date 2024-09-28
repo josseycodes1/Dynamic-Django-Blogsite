@@ -23,6 +23,13 @@ source env/Scripts/activate
 
 # Linux and Mac
 python -m venv env
+
+
+1. sudo apt install python3-venv  # Install the virtual environment tool
+
+2. python3 -m venv blog_env       # Create a virtual environment named 'blog_env'
+
+3. source blog_env/bin/activate   # Activate the virtual environment
 ```
 
 
